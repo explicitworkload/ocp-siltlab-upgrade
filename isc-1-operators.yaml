@@ -7,22 +7,41 @@ mirror:
     - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.19
       packages:
         - name: kubernetes-nmstate-operator
+          channels:
+            - name: stable
         - name: kubevirt-hyperconverged
+          channels:
+            - name: stable
         - name: lvms-operator
+          channels:
+            - name: stable-4.19
         - name: nfd
+          channels:
+            - name: stable
         - name: openshift-gitops-operator
+          channels:
+            - name: latest
         - name: openshift-pipelines-operator-rh
+          channels:
+            - name: latest
         - name: rhbk-operator
+          channels:
+            - name: stable-v26.6
         - name: rhods-operator
+          defaultChannel: stable-3.5
+          channels:
+            - name: stable-3.5
         - name: serverless-operator
+          channels:
+            - name: stable
         - name: servicemeshoperator
+          channels:
+            - name: stable
 
     # --- Certified Operators Index (v4.19) ---
     - catalog: registry.redhat.io/redhat/certified-operator-index:v4.19
       packages:
         - name: gpu-operator-certified
-
-    # --- Community Operators Index (v4.19) ---
-    - catalog: registry.redhat.io/redhat/community-operator-index:v4.19
-      packages:
-        - name: opendatahub-operator
+          channels:
+            - name: v26.7
+            - name: v26.3

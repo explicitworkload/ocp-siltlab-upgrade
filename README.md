@@ -85,17 +85,25 @@ All cluster operators report `AVAILABLE=True`, `PROGRESSING=False`, `DEGRADED=Fa
 - **[isc-2-platform.yaml](isc-2-platform.yaml)** — Platform images for OCP 4.19.20 and 4.20.5.
 - **[isc-2-operators.yaml](isc-2-operators.yaml)** — Operator catalogs from v4.20 indexes.
 
-All operator manifests mirror the following packages across Red Hat, Certified, and Community catalogs:
+All operator manifests mirror the following packages with explicit channel pinning:
 
-- `kubernetes-nmstate-operator`
-- `kubevirt-hyperconverged`
-- `lvms-operator`
-- `nfd`
-- `openshift-gitops-operator`
-- `openshift-pipelines-operator-rh`
-- `rhbk-operator`
-- `rhods-operator` (OpenShift AI)
-- `serverless-operator`
-- `servicemeshoperator`
-- `gpu-operator-certified`
-- `opendatahub-operator`
+**Red Hat Operators** (`redhat-operator-index`):
+
+| Package | Channel |
+|---------|---------|
+| `kubernetes-nmstate-operator` | `stable` |
+| `kubevirt-hyperconverged` | `stable` |
+| `lvms-operator` | `stable-4.19` / `stable-4.20` |
+| `nfd` | `stable` |
+| `openshift-gitops-operator` | `latest` |
+| `openshift-pipelines-operator-rh` | `latest` |
+| `rhbk-operator` | `stable-v26.6` |
+| `rhods-operator` (OpenShift AI) | `stable-3.5` |
+| `serverless-operator` | `stable` |
+| `servicemeshoperator` | `stable` |
+
+**Certified Operators** (`certified-operator-index`):
+
+| Package | Channels |
+|---------|----------|
+| `gpu-operator-certified` | `v26.7`, `v26.3` |
