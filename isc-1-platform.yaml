@@ -3,9 +3,6 @@ kind: ImageSetConfiguration
 archiveSize: 32
 mirror:
   platform:
-    platforms:
-      - architecture: amd64
-        os: linux
     channels:
       - name: stable-4.18
         minVersion: 4.18.19
