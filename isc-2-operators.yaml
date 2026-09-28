@@ -2,23 +2,6 @@ apiVersion: mirror.openshift.io/v2alpha1
 kind: ImageSetConfiguration
 archiveSize: 32
 mirror:
-  platform:
-    platforms:
-      - architecture: amd64
-        os: linux
-    channels:
-      # Step 1: Bridge source version in 4.19
-      - name: stable-4.19
-        minVersion: 4.19.20
-        maxVersion: 4.19.20
-        type: ocp
-
-      # Step 2: Direct target version in 4.20 (Pin to your desired z-stream, e.g., 4.20.5)
-      - name: stable-4.20
-        minVersion: 4.20.5
-        maxVersion: 4.20.5
-        type: ocp
-
   operators:
     # --- Red Hat Operators Index (v4.20) ---
     - catalog: registry.redhat.io/redhat/redhat-operator-index:v4.20

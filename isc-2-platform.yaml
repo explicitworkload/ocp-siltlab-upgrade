@@ -1,0 +1,18 @@
+apiVersion: mirror.openshift.io/v2alpha1
+kind: ImageSetConfiguration
+archiveSize: 32
+mirror:
+  platform:
+    platforms:
+      - architecture: amd64
+        os: linux
+    channels:
+      - name: stable-4.19
+        minVersion: 4.19.20
+        maxVersion: 4.19.20
+        type: ocp
+
+      - name: stable-4.20
+        minVersion: 4.20.5
+        maxVersion: 4.20.5
+        type: ocp

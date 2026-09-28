@@ -75,10 +75,17 @@ All cluster operators report `AVAILABLE=True`, `PROGRESSING=False`, `DEGRADED=Fa
 
 ## ImageSetConfiguration Manifests
 
-- **[isc.yaml](isc.yaml)** — Mirror configuration for upgrading from 4.18 → 4.19, with v4.19 operator catalogs.
-- **[isc-2.yaml](isc-2.yaml)** — Mirror configuration for upgrading from 4.19 → 4.20, with v4.20 operator catalogs.
+### Stage 1 — 4.18 → 4.19
 
-Both manifests mirror the following operator packages across Red Hat, Certified, and Community catalogs:
+- **[isc-1-platform.yaml](isc-1-platform.yaml)** — Platform images for OCP 4.18.19 and 4.19.20.
+- **[isc-1-operators.yaml](isc-1-operators.yaml)** — Operator catalogs from v4.19 indexes.
+
+### Stage 2 — 4.19 → 4.20
+
+- **[isc-2-platform.yaml](isc-2-platform.yaml)** — Platform images for OCP 4.19.20 and 4.20.5.
+- **[isc-2-operators.yaml](isc-2-operators.yaml)** — Operator catalogs from v4.20 indexes.
+
+All operator manifests mirror the following packages across Red Hat, Certified, and Community catalogs:
 
 - `kubernetes-nmstate-operator`
 - `kubevirt-hyperconverged`
