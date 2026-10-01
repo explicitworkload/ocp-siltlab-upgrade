@@ -98,7 +98,7 @@ All operator manifests mirror the following packages with explicit channel pinni
 | `openshift-gitops-operator` | `latest` |
 | `openshift-pipelines-operator-rh` | `latest` |
 | `rhbk-operator` | `stable-v26.6` |
-| `rhods-operator` (OpenShift AI) | `stable-3.5` |
+| `rhods-operator` (OpenShift AI) | `stable-2.22` (stage 1), `stable-2.25` (stage 2) |
 | `serverless-operator` | `stable` |
 | `servicemeshoperator` | `stable` |
 
