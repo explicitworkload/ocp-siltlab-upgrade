@@ -27,6 +27,9 @@ mirror:
         - name: rhbk-operator
           channels:
             - name: stable-v26.6
+        - name: rhods-operator
+          channels:
+            - name: stable-2.25
         - name: serverless-operator
           channels:
             - name: stable
